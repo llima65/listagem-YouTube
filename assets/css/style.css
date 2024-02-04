@@ -1,4 +1,29 @@
+body {
+    margin: 0;
+   
+}
 
+.container {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr ;
+   
+}
+
+header {
+    background-color: yellowgreen;
+   
+}
+
+aside {
+   background-color: aqua;
+   
+}
+main {
+    background-color: blueviolet;
+    
+}
 
 #perfil {
     width: 30px;
@@ -37,3 +62,10 @@
     height: 34px;
     align-items: center;
 }
+
+.sub-video {
+    display: grid;
+    width: 240px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}   

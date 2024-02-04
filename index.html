@@ -5,31 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        body {
-            margin: 0;
-            display: grid;
-            height: 100vh;
-            grid-template-columns: 160px auto;
-            grid-template-rows: 60px 1fr ;
-            grid-template-areas: 
-            "header header"
-            "aside main"
-            "aside main";
-        }
-        div {
-            grid-area: header;
-        }
-        aside {
-            grid-area: aside;
-        }
-        main {
-            grid-area: main;
-        }
-    </style>
+   
 </head>
 <body>
-    <div class="header" style="background-color: aqua;">
+    <div class="container">
         <header>
             <div class="cabecalho">
                 <div id="left">
@@ -51,8 +30,8 @@
             </div> 
         </header>
        
-    </div>
-    <aside style="background-color: yellow;">
+   
+    <aside>
         <div>
             <img src="assets/img/home.png" alt="">
             <span>Início</span>
@@ -94,8 +73,43 @@
             <span>Esportes</span>
         </div>
     </aside>
-    <main style="background-color: brown;">
+    <main>
+        <div class="video">
+            <img src="assets/img/image1.png" alt="">
+            <div class="sub-video">
+                <img src="assets/img/Channel Avatar.png" alt="">
+                <img src="assets/img/Geração Tech Unimed - BH - Ciência de Dados 2,1 mil visualizações Transmitido há 2 dias.png" alt="">
+            </div>
+          
+        </div>
+        <div class="video">
+            <img src="assets/img/image 2.png" alt="">
+            <div class="sub-video">
+                <img src="assets/img/Channel Avatar.png" alt="">
+                <img src="assets/img/Geração Tech Unimed - BH - Ciência de Dados 2,1 mil visualizações Transmitido há 2 dias.png" alt="">
+            </div>
+          
+        </div>
 
+        <div class="video">
+            <img src="assets/img/image1.png" alt="">
+            <div class="sub-video">
+                <img src="assets/img/Channel Avatar.png" alt="">
+                <img src="assets/img/Geração Tech Unimed - BH - Ciência de Dados 2,1 mil visualizações Transmitido há 2 dias.png" alt="">
+            </div>
+          
+        </div>
+
+        <div class="video">
+            <img src="assets/img/image1.png" alt="">
+            <div class="sub-video">
+                <img src="assets/img/Channel Avatar.png" alt="">
+                <img src="assets/img/Geração Tech Unimed - BH - Ciência de Dados 2,1 mil visualizações Transmitido há 2 dias.png" alt="">
+            </div>
+          
+        </div>
     </main>
+    </div>
+        
 </body>
 </html>
