@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-auto-columns: repeat(3, 1fr );
+    grid-template-rows: repeat(2, 56px 400px);
+    grid-template-areas: "header header header header" 
+    "aside main main main"
+    "aside main main main";
+    gap: 10px;
+}
+header {
+    background-color: orange;
+    grid-area: header;
+}
+main {
+    background-color: deepskyblue;
+    grid-area: main;
+}
+aside {
+    background-color: lightcoral;
+    grid-area: aside;
+    
+}
+
+#perfil {
+    width: 30px;
+    border-radius: 20px;
+}
+
+.cabecalho {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+
+.cabecalho #left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 134px;
+    height: 30px;
+    align-items: center;
+}
+
+.cabecalho #center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cabecalho #center #search {
+    position: relative;
+    left: 365px;
+    top: -30px;
+}
+
+.cabecalho #right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 130px;
+    height: 34px;
+    align-items: center;
+}
