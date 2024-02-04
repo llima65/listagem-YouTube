@@ -1,9 +1,9 @@
 body {
     margin: 0;
     display: grid;
-    grid-auto-columns: repeat(3, 1fr );
-    grid-template-rows: repeat(2, 56px 400px);
-    grid-template-areas: "header header header header" 
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 56px  auto;
+    grid-template-areas: "header header header ." 
     "aside main main main"
     "aside main main main";
     gap: 10px;
@@ -58,4 +58,13 @@ aside {
     width: 130px;
     height: 34px;
     align-items: center;
+}
+
+aside {
+    display: grid;
+    width: 200px;
+}
+
+main {
+    margin-right: 20%;
 }
