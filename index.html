@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Desafio Grid</title>
     <style>
-      
+        body {
+            margin: 0;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 160px auto;
+            grid-template-rows: 60px 1fr ;
+            grid-template-areas: 
+            "header header"
+            "aside main"
+            "aside main";
+        }
+        div {
+            grid-area: header;
+        }
+        aside {
+            grid-area: aside;
+        }
+        main {
+            grid-area: main;
+        }
     </style>
 </head>
 <body>
+    <div class="header" style="background-color: aqua;">
         <header>
             <div class="cabecalho">
                 <div id="left">
@@ -31,51 +51,51 @@
             </div> 
         </header>
        
-        <main>
-            main 
-        </main>
-        <aside>
-            <div>
-                <img src="assets/img/home.png" alt="">
-                <span>Início</span>
-            </div>
-            <div>
-                <img src="assets/img/compass.png" alt="">
-                <span>Explorar</span>
-            </div>
-            <div>
-                <img src="assets/img/youtube.png" alt="">
-                <span>Yourube</span>
-            </div>
-            <div>
-                <img src="assets/img/disc.png" alt="">
-                <span>YouTube music</span>
-            </div>
-            <div>
-                <img src="assets/img/thumbs-up.png" alt="">
-                <sspan>Video que gostei</sspan>
-            </div>
-            <div>
-                <img src="assets/img/clock.png" alt="">
-                <span>Assisti mais tarde</span>
-            </div>
-            <div>
-                <img src="assets/img/download.png" alt="">
-                <span>Downloads</span>
-            </div>
-            <div>
-                <img src="assets/img/film.png" alt="">
-                <span>Filmes</span>
-            </div>
-            <div>
-                <img src="assets/img/book.png" alt="">
-                <span>Aprender</span>
-            </div>
-            <div>
-                <img src="assets/img/award.png" alt="">
-                <span>Esportes</span>
-            </div>
-        </aside>
-       
+    </div>
+    <aside style="background-color: yellow;">
+        <div>
+            <img src="assets/img/home.png" alt="">
+            <span>Início</span>
+        </div>
+        <div>
+            <img src="assets/img/compass.png" alt="">
+            <span>Explorar</span>
+        </div>
+        <div>
+            <img src="assets/img/youtube.png" alt="">
+            <span>Yourube</span>
+        </div>
+        <div>
+            <img src="assets/img/disc.png" alt="">
+            <span>YouTube music</span>
+        </div>
+        <div>
+            <img src="assets/img/thumbs-up.png" alt="">
+            <sspan>Video que gostei</sspan>
+        </div>
+        <div>
+            <img src="assets/img/clock.png" alt="">
+            <span>Assisti mais tarde</span>
+        </div>
+        <div>
+            <img src="assets/img/download.png" alt="">
+            <span>Downloads</span>
+        </div>
+        <div>
+            <img src="assets/img/film.png" alt="">
+            <span>Filmes</span>
+        </div>
+        <div>
+            <img src="assets/img/book.png" alt="">
+            <span>Aprender</span>
+        </div>
+        <div>
+            <img src="assets/img/award.png" alt="">
+            <span>Esportes</span>
+        </div>
+    </aside>
+    <main style="background-color: brown;">
+
+    </main>
 </body>
 </html>

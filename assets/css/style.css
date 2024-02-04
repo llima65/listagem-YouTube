@@ -1,26 +1,4 @@
-body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 56px  auto;
-    grid-template-areas: "header header header ." 
-    "aside main main main"
-    "aside main main main";
-    gap: 10px;
-}
-header {
-    background-color: orange;
-    grid-area: header;
-}
-main {
-    background-color: deepskyblue;
-    grid-area: main;
-}
-aside {
-    background-color: lightcoral;
-    grid-area: aside;
-    
-}
+
 
 #perfil {
     width: 30px;
@@ -58,13 +36,4 @@ aside {
     width: 130px;
     height: 34px;
     align-items: center;
-}
-
-aside {
-    display: grid;
-    width: 200px;
-}
-
-main {
-    margin-right: 20%;
 }
